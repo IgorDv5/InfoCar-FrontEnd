@@ -6,7 +6,7 @@
     display: flex; /* Usa flexbox para os elementos do logo */
     background-color: rgb(147, 14, 14);
     width: 100%;
-    height: 5rem;
+    height: 8.5rem;
     color: white;
     align-items: center; /* Centraliza os itens verticalmente */
     justify-content: center; /* Centraliza os itens horizontalmente */
@@ -14,12 +14,10 @@
 }
 
 img {
-    width: 20rem;
-    margin-right: 1rem;
+    width: 15rem;
     border-radius: 10%; /* Adiciona uma borda arredondada à imagem */
     text-align: center;
     background-color: rgb(147, 14, 14);
-    margin: 0;
     margin-right: 10rem;
 }
 
