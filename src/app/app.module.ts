@@ -14,6 +14,7 @@ import { UsuarioListComponent } from './components/usuario/usuario-list/usuario-
 import {MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatInputModule } from '@angular/material/input';
     MatTableModule,
     MatPaginatorModule,
     MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

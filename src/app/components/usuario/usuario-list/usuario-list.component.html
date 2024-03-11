@@ -1,8 +1,12 @@
 <div class="container">
-    
+
+    <h1>Lista de Usuários</h1>
+
+    <button mat-stroked-button color="primary">Criar Novo Usuário</button>
+
     <mat-form-field>
         <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. arthur" #input>
       </mat-form-field>
 
     <div class="mat-elevation-z8">
