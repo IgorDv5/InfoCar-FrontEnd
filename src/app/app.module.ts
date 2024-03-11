@@ -10,12 +10,17 @@ import { MatListModule } from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './components/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import { UsuarioListComponent } from './components/usuario/usuario-list/usuario-list.component';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
+    UsuarioListComponent,
     
   ],
   imports: [
@@ -26,6 +31,9 @@ import {MatCardModule} from '@angular/material/card';
     MatListModule,
     MatIconModule,
     MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
