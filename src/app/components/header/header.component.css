@@ -4,12 +4,13 @@
 
 .logo {
     display: flex; /* Usa flexbox para os elementos do logo */
-    justify-content: center; /* Centraliza os itens horizontalmente */
     background-color: rgb(147, 14, 14);
     width: 100%;
     height: 5rem;
     color: white;
     align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+   
 }
 
 img {
@@ -25,4 +26,21 @@ img {
 h1{
     margin: 0;
     margin-right: 10rem;
+}
+
+.links {
+    display: flex; /* Usar flexbox para organizar os links lado a lado */
+    margin-right: 1rem; /* Adicionar margem à direita dos links */
+}
+
+.links a {
+    display: flex; /* Permitir que os links sejam tratados como itens flexíveis */
+    align-items: center; /* Alinhar os ícones e textos verticalmente */
+    text-decoration: none; /* Remover a decoração do texto */
+    color: white; /* Definir a cor do texto */
+    margin-right: 3rem; /* Adicionar espaçamento entre os links */
+}
+
+.links a i {
+    margin-right: 0.1rem; /* Adicionar espaçamento entre o ícone e o texto */
 }
