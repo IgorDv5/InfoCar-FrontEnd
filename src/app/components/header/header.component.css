@@ -1,0 +1,28 @@
+.container{
+
+}
+
+.logo {
+    display: flex; /* Usa flexbox para os elementos do logo */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    background-color: rgb(147, 14, 14);
+    width: 100%;
+    height: 5rem;
+    color: white;
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+img {
+    width: 10rem;
+    margin-right: 1rem;
+    border-radius: 10%; /* Adiciona uma borda arredondada à imagem */
+    border: 2px solid white; /* Adiciona uma borda branca à imagem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra à imagem */
+    text-align: center;
+    background-color: rgb(176, 171, 171);
+}
+
+h1{
+    margin: 0;
+    margin-right: 10rem;
+}
