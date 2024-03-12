@@ -16,6 +16,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+
+// Imports para componentes do Angular Material
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +38,7 @@ import { LoginComponent } from './components/login/login.component';
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
@@ -38,6 +49,15 @@ import { LoginComponent } from './components/login/login.component';
     MatPaginatorModule,
     MatInputModule,
     MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatSnackBarModule,
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatSelectModule,
+    MatRadioModule,
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
