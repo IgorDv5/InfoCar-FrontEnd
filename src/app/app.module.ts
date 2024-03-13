@@ -18,6 +18,10 @@ import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 
+
+// Para realizar requisições HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 // Imports para componentes do Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -27,6 +31,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+
 
 
 @NgModule({
@@ -58,6 +63,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatSelectModule,
     MatRadioModule,
     ReactiveFormsModule,
+    HttpClientModule,
     ToastrModule.forRoot(
       {
         timeOut: 4000,
