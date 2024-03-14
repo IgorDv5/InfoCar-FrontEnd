@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
     this.service.authenticate(this.creds).subscribe(resposta => {
       this.service.sucessfulLogin(resposta.headers.get('Authorization').substring(7))
       this.router.navigate([''])
+      this.toast.success('Logado Com Sucesso!','Login',{timeOut: 2000})
     }, () => {
       this.toast.error('Usuario ou Senha Incorretos!');
     })
