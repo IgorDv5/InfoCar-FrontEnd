@@ -1,49 +1,33 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatTableDataSource } from '@angular/material/table';
-import { Usuario } from 'src/app/models/usuario';
-
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { MatPaginator } from "@angular/material/paginator";
+import { MatTableDataSource } from "@angular/material/table";
+import { Usuario } from "src/app/models/usuario";
+import { UsuarioService } from "src/app/services/usuario.service";
 
 @Component({
-  selector: 'app-usuario-list',
-  templateUrl: './usuario-list.component.html',
-  styleUrls: ['./usuario-list.component.css']
+  selector: "app-usuario-list",
+  templateUrl: "./usuario-list.component.html",
+  styleUrls: ["./usuario-list.component.css"],
 })
 export class UsuarioListComponent implements OnInit {
+  ELEMENT_DATA: Usuario[] = [];
 
-  ELEMENT_DATA: Usuario[] = [
-    {
-    id: '1',
-    nome: 'igor',
-    cpf: '12345678910',
-    email: 'igor@gmail.com',
-    senha: '123',
-    dataNascimento: null,
-    funcao: 'Cliente'
-  },
-  {
-    id: '2',
-    nome: 'roberto',
-    cpf: '12345678910',
-    email: 'roberto@gmail.com',
-    senha: '123',
-    dataNascimento: null,
-    funcao: 'Cliente'
-  }
-]
-
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','funcao','acoes'];
+  displayedColumns: string[] = [
+    "id",
+    "name",
+    "cpf",
+    "email",
+    "funcao",
+    "acoes",
+  ];
   dataSource = new MatTableDataSource<Usuario>(this.ELEMENT_DATA);
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+  constructor(private service: UsuarioService) {}
+
+  ngOnInit(): void {
+    this.findAll();
   }
 
   applyFilter(event: Event) {
@@ -51,7 +35,11 @@ export class UsuarioListComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
+  findAll() {
+    this.service.findAll().subscribe((resposta) => {
+      this.ELEMENT_DATA = resposta;
+      this.dataSource = new MatTableDataSource<Usuario>(this.ELEMENT_DATA);
+      this.dataSource.paginator = this.paginator;
+    });
+  }
 }
-
-
-
