@@ -32,6 +32,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
 
 
 
@@ -42,6 +43,7 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
     HomeComponent,
     UsuarioListComponent,
     LoginComponent,
+    UsuarioCreateComponent,
     
   ],
   imports: [
