@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   }
 
   logout() {
-      this.router.navigate(['login']); 
+      this.router.navigate(['lusuarios/create']); 
       this.authService.logout();
       this.toast.info('Logout Realizado Com Sucesso!','Logout', { timeOut: 3000})
   }
