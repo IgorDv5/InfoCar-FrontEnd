@@ -15,11 +15,11 @@ export class HeaderComponent implements OnInit {
     private toast: ToastrService) { }
 
   ngOnInit(): void {
-    this.router.navigate(['home'])
+    this.router.navigate(['usuarios/create'])
   }
 
   logout() {
-      this.router.navigate(['lusuarios/create']); 
+      this.router.navigate(['login']); 
       this.authService.logout();
       this.toast.info('Logout Realizado Com Sucesso!','Logout', { timeOut: 3000})
   }

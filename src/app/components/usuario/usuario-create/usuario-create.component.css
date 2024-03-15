@@ -1,0 +1,35 @@
+.container{
+    width: 25rem;
+    margin: auto;
+    padding: 1rem 1rem 3rem 1rem;
+    border-radius: .6rem;
+    margin-top: 2rem;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    height: 8rem;
+    margin: auto;
+}
+
+.form{
+    margin-top: .1rem;
+}
+
+.full-width{
+    width:100%;
+
+}
+
+mat-select{
+    margin-top: .5rem;
+    margin: auto;
+}
+
+button{
+    margin-top: 1rem;
+    width: 100%;
+}
