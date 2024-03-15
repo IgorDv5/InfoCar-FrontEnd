@@ -6,8 +6,13 @@
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra suave para dar uma aparência mais elevada */
     padding: 1rem; /* Adicione algum preenchimento interno para melhorar a aparência */
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-align: center;
+  }
+
+  mat-card-header{
+    margin-top: .1rem;
+      justify-content: center;
   }
   
   .img-home img {
