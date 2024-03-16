@@ -1,12 +1,12 @@
 .container{
     width: 25rem;
     margin: auto;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
     border-radius: .6rem;
     margin-top: 2rem;
 }
 
-h1{
+h1,p{
     text-align: center;
 }
 
@@ -17,6 +17,10 @@ img{
 
 .form{
     margin-top: .1rem;
+}
+
+mat-icon{
+    opacity: 50%
 }
 
 .full-width{
@@ -32,4 +36,9 @@ mat-select{
 button{
     margin-top: 1rem;
     width: 100%;
+}
+
+p{
+    margin-top: 3rem;
+    opacity: 75%;
 }
