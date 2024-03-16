@@ -33,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 
@@ -74,6 +75,7 @@ import { UsuarioCreateComponent } from './components/usuario/usuario-create/usua
         progressBar: true
       }
     ),
+    NgxMaskModule.forRoot(),
 
   ],
   providers: [AuthInterceptorProvider],
