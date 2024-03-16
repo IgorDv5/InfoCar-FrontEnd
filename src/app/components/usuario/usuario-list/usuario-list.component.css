@@ -27,3 +27,10 @@ table {
     width: 100%;
   }
 
+.edit{
+    color: rgb(19, 19, 137);
+}
+
+.delete{
+    color: red;
+}
