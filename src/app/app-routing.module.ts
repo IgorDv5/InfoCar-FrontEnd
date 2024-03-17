@@ -7,6 +7,7 @@ import { UsuarioListComponent } from './components/usuario/usuario-list/usuario-
 import { HeaderComponent } from './components/header/header.component';
 import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
 import { UsuarioEditComponent } from './components/usuario/usuario-edit/usuario-edit.component';
+import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
       {path: 'usuarios', component: UsuarioListComponent},
       {path: 'usuarios/create', component: UsuarioCreateComponent},
       {path: 'usuarios/edit/:id', component: UsuarioEditComponent},
+      {path: 'usuarios/delete/:id', component: UsuarioDeleteComponent},
    
     ]
   },
