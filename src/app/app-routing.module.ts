@@ -20,7 +20,7 @@ const routes: Routes = [
 
       {path: 'usuarios', component: UsuarioListComponent},
       {path: 'usuarios/create', component: UsuarioCreateComponent},
-      {path: 'usuarios/edit', component: UsuarioEditComponent},
+      {path: 'usuarios/edit/:id', component: UsuarioEditComponent},
    
     ]
   },

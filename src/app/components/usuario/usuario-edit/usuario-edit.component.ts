@@ -1,15 +1,75 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { FormControl, Validators } from "@angular/forms";
+import { ActivatedRoute, Router } from "@angular/router";
+import { ToastrService } from "ngx-toastr";
+import { Usuario } from "src/app/models/usuario";
+import { UsuarioService } from "src/app/services/usuario.service";
 
 @Component({
-  selector: 'app-usuario-edit',
-  templateUrl: './usuario-edit.component.html',
-  styleUrls: ['./usuario-edit.component.css']
+  selector: "app-usuario-edit",
+  templateUrl: "./usuario-edit.component.html",
+  styleUrls: ["./usuario-edit.component.css"],
 })
 export class UsuarioEditComponent implements OnInit {
+  usuario: Usuario = {
+    id: "",
+    nome: "",
+    cpf: "",
+    email: "",
+    senha: "",
+    dataNascimento: "",
+    funcao: "",
+  };
 
-  constructor() { }
+  nome: FormControl = new FormControl(null, Validators.minLength(3));
+  cpf: FormControl = new FormControl(null, Validators.required);
+  email: FormControl = new FormControl(null, Validators.email);
+  senha: FormControl = new FormControl(null, Validators.minLength(3));
+  funcao: FormControl = new FormControl(null, Validators.required);
+
+  constructor(
+    private service: UsuarioService,
+    private toast: ToastrService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
+    this.usuario.id = this.route.snapshot.paramMap.get("id");
+    this.findById();
   }
 
+  validaCampos(): boolean {
+    return (
+      this.nome.valid &&
+      this.cpf.valid &&
+      this.email &&
+      this.senha.valid &&
+      this.funcao.valid
+    );
+  }
+
+  findById(): void {
+    this.service.findById(this.usuario.id).subscribe((resposta) => {
+      this.usuario = resposta;
+    });
+  }
+
+  update() {
+    this.service.update(this.usuario).subscribe(
+      () => {
+        this.toast.success("Usuario Alterado Com Sucesso!", "Alteração");
+        this.router.navigate(["/usuarios"]);
+      },
+      (ex) => {
+        if (ex.error.erros) {
+          ex.error.errors.forEach((element) => {
+            this.toast.error(element.message);
+          });
+        } else {
+          this.toast.error(ex.error.message);
+        }
+      }
+    );
+  }
 }

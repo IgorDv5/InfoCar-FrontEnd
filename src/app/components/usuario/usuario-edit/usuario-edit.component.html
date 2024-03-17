@@ -1,1 +1,63 @@
-<p>usuario-edit works!</p>
+<div class="container mat-elevation-z8">
+
+    <h1>Editando Usuario</h1>
+
+    <img class="full-width" src="assets/img/create.svg" alt="Imagem de Cadastro">
+
+    <form class="form">
+        <mat-form-field class="full-width">
+            <mat-label>Nome</mat-label>
+            <input
+            [(ngModel)]="usuario.nome" name="nome"
+            [formControl]="nome" required
+             matInput placeholder="Ex. Mathias" maxlength="50">
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>CPF</mat-label>
+            <input
+            [(ngModel)]="usuario.cpf" name="cpf"
+            [formControl]="cpf" required
+             matInput placeholder="Ex. ###.###.###-##"
+            mask="000.000.000-00"> 
+            <mat-icon matSuffix>pin</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>E-Mail</mat-label>
+            <input
+            [(ngModel)]="usuario.email" name="email"
+            [formControl]="email" required
+             matInput placeholder="Ex. exemplo@email.com">
+            <mat-icon matSuffix>mail</mat-icon>
+        </mat-form-field> 
+ 
+        <mat-form-field class="full-width">
+            <mat-label>Senha</mat-label>
+            <input type="password"
+            [(ngModel)]="usuario.senha" name="senha"
+            [formControl]="senha" required
+             matInput placeholder="Ex. 123">
+            <mat-icon matSuffix>password</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Função</mat-label>
+            <mat-select
+            [(ngModel)]="usuario.funcao" name="funcao"
+             [formControl]="funcao" requerid>
+                <mat-option value="Administrador">Administrador</mat-option>
+                <mat-option value="Vendedor">Vendedor</mat-option>
+                <mat-option value="Cliente">Cliente</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <button (click)="update()" [disabled]="!validaCampos()" mat-raised-button color="primary">Editar</button>
+        <button routerLink="../../" mat-raised-button color="warn">Cancelar</button>
+
+    </form>
+
+    <p class="full-width"> Developed by Igor Dantas </p>
+
+</div>
