@@ -1,0 +1,35 @@
+[33m1130c19[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Rota Para Componente Usuario-Delete
+[33m2fab435[m Componente Usuario-Delete Criado
+[33m54e5b34[m Componente Usuario-edit Finalizado
+[33m4b2fba9[m Rota Para Usuario-edit
+[33m6e90686[m Componente Usuario-edit Criado
+[33mece0b89[m Icones no Componente Usuario-list
+[33me8e5b4d[m Componente Usuario-Create Finalizado
+[33mf288120[m Melhorias No Html e Css Para Componente Usuario-Create
+[33m25dfc3c[m Melhorias no Html e Css do projeto
+[33m48ddcfd[m HTML e CSS Para Componente Usuario-list Implementado
+[33m22e2b9c[m Rota Para Usuario-create implementada
+[33m1f9c7e6[m Componente Usuario-create Criado
+[33m86774d1[m Correção no Componente Header
+[33m5f36df7[m Atualizacao de Header Adicionando Carro na Aba
+[33me66f56a[m Finalizando Usuario-List
+[33mb65cb92[m Interceptor para Requisições Http
+[33m2c281ae[m Logout Implementado
+[33mdae644d[m Autenticacao de login
+[33m06024dd[m Serviço de Mensagens Implementado
+[33m6104fdf[m Instalação de Toastr
+[33m18482f1[m Validação de Formularios Para Login
+[33mf428da4[m HTML e CSS Para Componente LOGIN
+[33ma7a03c3[m Rota Para Login Criada
+[33m7b668d4[m Componente Login Criado
+[33ma4ef0c0[m Melhorias no Componente USUARIO-LIST
+[33m10d2d6c[m Html E CSS para USUARIO-LIST Implementado
+[33ma7f17bb[m Finalizando Componente Home e Melhorias no Header
+[33m7787025[m Melhoria em Componente Header
+[33meea34e1[m Html e Css Para Componente Header
+[33mb574a2b[m Componente Header
+[33mc102daa[m Instalacao Angular Material
+[33m2e4ee9e[m InlineTemplate e Style Desabilitados
+[33m9f52f3a[m Strict Desabilitado
+[33mf47ade9[m Projeto Iniciado
+[33mb263d5f[m initial commit

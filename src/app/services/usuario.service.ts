@@ -27,4 +27,8 @@ export class UsuarioService {
     return this.http.put<Usuario>(`${API_CONFIG.baseUrl}/usuarios/${usuario.id}`,usuario);
   }
 
+  delete(id:any): Observable<Usuario>{
+    return this.http.delete<Usuario>(`${API_CONFIG.baseUrl}/usuarios/${id}`);
+  }
+
 }
