@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
     private toast: ToastrService) { }
 
   ngOnInit(): void {
-    this.router.navigate(['usuarios'])
+    this.router.navigate(['carros'])
   }
 
   logout() {

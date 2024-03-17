@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { UsuarioCreateComponent } from './components/usuario/usuario-create/usuario-create.component';
 import { UsuarioEditComponent } from './components/usuario/usuario-edit/usuario-edit.component';
 import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';
+import { CarroListComponent } from './components/carro/carro-list/carro-list.component';
 
 
 
@@ -23,6 +24,8 @@ const routes: Routes = [
       {path: 'usuarios/create', component: UsuarioCreateComponent},
       {path: 'usuarios/edit/:id', component: UsuarioEditComponent},
       {path: 'usuarios/delete/:id', component: UsuarioDeleteComponent},
+
+      {path: 'carros', component: CarroListComponent},
    
     ]
   },
