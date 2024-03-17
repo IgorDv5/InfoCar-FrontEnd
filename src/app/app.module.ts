@@ -36,6 +36,7 @@ import { UsuarioCreateComponent } from './components/usuario/usuario-create/usua
 import { NgxMaskModule } from 'ngx-mask';
 import { UsuarioEditComponent } from './components/usuario/usuario-edit/usuario-edit.component';
 import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';
+import { CarroListComponent } from './components/carro/carro-list/carro-list.component';
 
 
 
@@ -49,6 +50,7 @@ import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usua
     UsuarioCreateComponent,
     UsuarioEditComponent,
     UsuarioDeleteComponent,
+    CarroListComponent,
     
   ],
   imports: [
