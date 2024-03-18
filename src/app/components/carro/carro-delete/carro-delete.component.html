@@ -1,0 +1,46 @@
+<div class="container mat-elevation-z8">
+
+    <h1>Deletando Carro</h1>
+
+    <img class="full-width" src="assets/img/create.svg" alt="Imagem de Cadastro">
+
+    <form class="form">
+        <mat-form-field class="full-width">
+            <mat-label>Marca</mat-label>
+            <input
+            [(ngModel)]="carro.marca" name="marca" matInput [disabled]="true">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Modelo</mat-label>
+            <input [(ngModel)]="carro.modelo" name="modelo" matInput [disabled]="true"> 
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Placa</mat-label>
+            <input [(ngModel)]="carro.placa" name="placa"matInput [disabled]="true">
+        </mat-form-field> 
+ 
+        <mat-form-field class="full-width">
+            <mat-label>Ano De Fabricação</mat-label>
+            <input [(ngModel)]="carro.anoFabricacao" name="anoFabricacao"matInput [disabled]="true">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Chassi</mat-label>
+            <input [(ngModel)]="carro.chassi" name="chassi" matInput [disabled]="true">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Cavalos</mat-label>
+            <input [(ngModel)]="carro.cavalaria" name="cavalaria"matInput [disabled]="true">
+        </mat-form-field>
+
+        <button (click)="delete()" mat-raised-button color="primary">Deletar</button>
+        <button routerLink="../../" mat-raised-button color="warn">Cancelar</button>
+
+    </form> 
+
+    <p class="full-width"> Developed by Igor Dantas </p>
+ 
+</div>

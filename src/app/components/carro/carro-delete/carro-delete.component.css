@@ -1,0 +1,44 @@
+.container{
+    width: 25rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: .6rem;
+    margin-top: 2rem;
+}
+
+h1,p{
+    text-align: center;
+}
+
+img{
+    height: 8rem;
+    margin: auto;
+}
+
+.form{
+    margin-top: .1rem;
+}
+
+mat-icon{
+    opacity: 50%
+}
+
+.full-width{
+    width:100%;
+
+}
+
+mat-select{
+    margin-top: .5rem;
+    margin: auto;
+}
+
+button{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+p{
+    margin-top: 3rem;
+    opacity: 75%;
+}
