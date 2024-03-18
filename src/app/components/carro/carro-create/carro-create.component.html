@@ -1,0 +1,65 @@
+<div class="container mat-elevation-z8">
+
+    <h1>Cadastro de Carro</h1>
+
+    <img class="full-width" src="assets/img/create.svg" alt="Imagem de Cadastro">
+
+    <form class="form">
+        <mat-form-field class="full-width">
+            <mat-label>Marca</mat-label>
+            <input
+            [(ngModel)]="carro.marca" name="marca"
+            [formControl]="marca" required
+             matInput placeholder="Ex. Ford" maxlength="50">
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Modelo</mat-label>
+            <input
+            [(ngModel)]="carro.modelo" name="modelo"
+            [formControl]="modelo" required
+             matInput placeholder="Ex. Fusion"> 
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Placa</mat-label>
+            <input
+            [(ngModel)]="carro.placa" name="placa"
+            [formControl]="placa" required
+             matInput placeholder="Ex. XXX-1234"
+             mask="SSS-0000">
+        </mat-form-field> 
+ 
+        <mat-form-field class="full-width">
+            <mat-label>Ano De Fabricação</mat-label>
+            <input
+            [(ngModel)]="carro.anoFabricacao" name="anoFabricacao"
+            [formControl]="anoFabricacao" required mask="0000" 
+             matInput placeholder="Ex. 2010">
+
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Chassi</mat-label>
+            <input
+            [(ngModel)]="carro.chassi" name="chassi"
+            [formControl]="chassi" required
+             matInput>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Cavalos</mat-label>
+            <input
+            [(ngModel)]="carro.cavalaria" name="cavalaria"
+            [formControl]="cavalaria" required
+             matInput placeholder="Ex. 98">
+        </mat-form-field>
+
+        <button (click)="create()" [disabled]="!validaCampos()" mat-raised-button color="primary">Cadastrar</button>
+        <button routerLink="../" mat-raised-button color="warn">Cancelar</button>
+
+    </form> 
+
+    <p class="full-width"> Developed by Igor Dantas </p>
+ 
+</div>

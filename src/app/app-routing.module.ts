@@ -9,6 +9,7 @@ import { UsuarioCreateComponent } from './components/usuario/usuario-create/usua
 import { UsuarioEditComponent } from './components/usuario/usuario-edit/usuario-edit.component';
 import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';
 import { CarroListComponent } from './components/carro/carro-list/carro-list.component';
+import { CarroCreateComponent } from './components/carro/carro-create/carro-create.component';
 
 
 
@@ -26,6 +27,7 @@ const routes: Routes = [
       {path: 'usuarios/delete/:id', component: UsuarioDeleteComponent},
 
       {path: 'carros', component: CarroListComponent},
+      {path: 'carros/create', component: CarroCreateComponent},
    
     ]
   },
