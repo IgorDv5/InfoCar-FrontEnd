@@ -12,12 +12,16 @@ import { CarroListComponent } from './components/carro/carro-list/carro-list.com
 import { CarroCreateComponent } from './components/carro/carro-create/carro-create.component';
 import { CarroEditComponent } from './components/carro/carro-edit/carro-edit.component';
 import { CarroDeleteComponent } from './components/carro/carro-delete/carro-delete.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 
 
 const routes: Routes = [
   {
     path: 'login', component: LoginComponent
+  },
+  {
+    path: 'cadastro', component: CadastroComponent
   },
   {
     path: '',component: HeaderComponent, canActivate: [AuthGuard], children: [
