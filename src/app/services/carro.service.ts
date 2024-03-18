@@ -11,12 +11,20 @@ export class CarroService {
 
   constructor(private http: HttpClient) { }
 
+  findById(id: any): Observable<Carro> {
+    return this.http.get<Carro>(`${API_CONFIG.baseUrl}/carros/${id}`);
+  }
+
   findAll(): Observable<Carro[]> {
     return this.http.get<Carro[]>(`${API_CONFIG.baseUrl}/carros`);
   }
 
   create(carro: Carro): Observable<Carro> {
     return this.http.post<Carro>(`${API_CONFIG.baseUrl}/carros`,carro);
+  }
+
+  update(carro: Carro): Observable<Carro>{
+    return this.http.put<Carro>(`${API_CONFIG.baseUrl}/carros/${carro.id}`, carro);
   }
 
 }

@@ -38,6 +38,7 @@ import { UsuarioEditComponent } from './components/usuario/usuario-edit/usuario-
 import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';
 import { CarroListComponent } from './components/carro/carro-list/carro-list.component';
 import { CarroCreateComponent } from './components/carro/carro-create/carro-create.component';
+import { CarroEditComponent } from './components/carro/carro-edit/carro-edit.component';
 
 
 
@@ -53,6 +54,7 @@ import { CarroCreateComponent } from './components/carro/carro-create/carro-crea
     UsuarioDeleteComponent,
     CarroListComponent,
     CarroCreateComponent,
+    CarroEditComponent,
     
   ],
   imports: [
